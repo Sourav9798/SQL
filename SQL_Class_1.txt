@@ -1,0 +1,36 @@
+create DATABASE test;
+
+use test;
+
+show DATABASES;
+
+Create database test_new;
+
+drop database test_new;
+
+create table if not exists employee
+(
+    id int,
+    name VARCHAR(50)
+);
+
+show tables;
+
+show create table employee;
+
+drop table employee;
+
+create table if not exists employee
+(
+    id INT,
+    name VARCHAR(50),
+    salary DOUBLE,
+    hiring_date DATE
+);
+
+Insert into employee values(1,"Sourav","30000","2021-05-25"),(2,"Aman","30000","2021-07-05"),
+(3,"Mota","30000","2021-06-06"),(4,"Kalua","30000","2021-11-07");
+
+select * from employee;
+
+select id,salary from employee;
